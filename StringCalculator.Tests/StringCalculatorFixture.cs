@@ -12,6 +12,7 @@ namespace CodeKata.Tests
         [TestCase("1", ExpectedResult = 1)]
         [TestCase("-1", ExpectedResult = -1)]
         [TestCase("2,-1", ExpectedResult = 1)]
+        [TestCase("1,2,3,4,5,6,7,8,9,10", ExpectedResult = 55)]
         public int AddTest(string input)
         {
             var stringCalculator = new StringCalculator();
