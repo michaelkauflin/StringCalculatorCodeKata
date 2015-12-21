@@ -7,7 +7,11 @@ namespace CodeKata.Tests
     internal class StringCalculatorFixture
     {
         [TestCase("", ExpectedResult = 0)]
+        [TestCase("1,2,", ExpectedResult = 3)]
+        [TestCase("1,2,", ExpectedResult = 3)]
         [TestCase("1,2", ExpectedResult = 3)]
+        [TestCase("1;2", ExpectedResult = 3)]
+        [TestCase("1\n2", ExpectedResult = 3)]
         [TestCase("0", ExpectedResult = 0)]
         [TestCase("1", ExpectedResult = 1)]
         [TestCase("-1", ExpectedResult = -1)]
